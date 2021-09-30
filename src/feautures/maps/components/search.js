@@ -9,11 +9,8 @@ export const Search = () => {
     const [searchKeyword, setSearchKeyword] = useState(keyword);
 
     useEffect(() => {
-        search(searchKeyword);
-    }, []);
-    // useEffect(() => {
-    //     setSearchKeyword(keyword);
-    // }, [keyword]);
+        setSearchKeyword(keyword);
+    }, [keyword]);
 
     return (
         <View style={styles.search}>
